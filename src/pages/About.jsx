@@ -37,17 +37,17 @@ export default function About() {
             <div className="cards">
               <div className="card">
                 <img src="https://via.placeholder.com/300x300" alt="Nutritionist" />
-                <h3>Jane Doe</h3>
+                <h3>LENZ Godwill</h3>
                 <p>Certified Nutritionist – Expert in diabetes and pregnancy diets.</p>
               </div>
               <div className="card">
                 <img src="https://via.placeholder.com/300x300" alt="Chef" />
-                <h3>John Smith</h3>
+                <h3>John jacob</h3>
                 <p>Head Chef – Focused on healthy, tasty meal preparation.</p>
               </div>
               <div className="card">
                 <img src="https://via.placeholder.com/300x300" alt="Wellness Expert" />
-                <h3>Mary Johnson</h3>
+                <h3>Mary boy</h3>
                 <p>Wellness Consultant – Ensuring meals support holistic health.</p>
               </div>
             </div>

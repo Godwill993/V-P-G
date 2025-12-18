@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
               <div className="card">
                 <h3>Phone</h3>
-                <p>+237 XXX XXX XXX</p>
+                <p>+237 XXX XXX </p>
               </div>
               <div className="card">
                 <h3>Address</h3>
