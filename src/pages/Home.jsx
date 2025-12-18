@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import Personalized from  "../assets/images/istockphoto-1314945563-2048x2048.jpg"
 import Ing from  "../assets/images/tomatoes-1867744_640.jpg"
 import Delivary from  "../assets/images/images.jpeg"
+import HeroImage from "../assets/images/food-and-drink-industry-7279389_1920.jpg"
+import { FaFacebook, FaInstagram, FaTwitterX } from "react-icons/fa";
 
 export default function Home() {
   const [showLoader, setShowLoader] = useState(true);
@@ -26,7 +28,11 @@ export default function Home() {
       {showLoader && <Loader />}
       <main className="page">
         <ScrollReveal>
-          <section className="hero">
+            <div className="hero-section">
+                <div className="hero-imag">
+                    {<img src={HeroImage} alt="Healthy Meal" />}
+                </div>
+                <section className="hero">
             <h1>Healthy Meals, Tailored for Your Life</h1>
             <p>
               Visionary Path Group delivers nutritious, carefully designed meals
@@ -36,7 +42,15 @@ export default function Home() {
               We focus on delivering fresh ingredients, expert nutritional
               guidance, and convenient weekly meal delivery.
             </p>
+            <div className="icon-link">
+                <a href="#" className="social"><FaFacebook /></a>  
+                <a href="#" className="social"><FaInstagram /></a>
+                <a href="#" className="social"><FaTwitterX /></a>
+                     
+            </div>
           </section>
+            </div>
+          
         </ScrollReveal>
 
         <ScrollReveal>

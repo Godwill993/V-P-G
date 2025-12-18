@@ -4,6 +4,28 @@
   max-width: 1200px;
   margin: auto;
 }
+.hero-section {
+  display: flex;
+ padding-top: 30px;
+ padding-bottom: 80px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.icon-link {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  color: var(--primary);
+}
+.hero-imag img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
 
 .hero {
   text-align: center;
@@ -81,6 +103,13 @@
   .card {
     flex: 1 1 calc(33% - 1rem);
   }
+  .hero-section {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .hero-imag, .hero {
+    flex: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -90,4 +119,7 @@
   .hero p {
     font-size: 0.9rem;
   }
+  .hero-section {
+    flex-direction: column;
+  } 
 }
