@@ -1,0 +1,114 @@
+
+.page {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.contact-hero h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.contact-hero p {
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+.contact-hero img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.contact-hero img:hover {
+  transform: scale(1.02);
+}
+
+.contact-info {
+  padding: 2rem 0;
+}
+.contact-info h2 {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+.contact-info .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-info .card {
+  background: var(--light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-info .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.contact-form {
+  padding: 2rem 0;
+  text-align: center;
+}
+.contact-form h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.contact-form button {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary);
+  color: var(--light);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.contact-form button:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .contact-info .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact-info .card {
+    flex: 1 1 calc(33% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero h1 {
+    font-size: 1.5rem;
+  }
+  .contact-hero p {
+    font-size: 0.9rem;
+  }
+}

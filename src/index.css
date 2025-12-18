@@ -1,0 +1,95 @@
+
+:root {
+  --primary: #19B5A5;
+  --accent: #FFB027;
+  --dark: #0C2D48;
+  --light: #ffffff;
+
+  --bg: var(--light);
+  --text: var(--dark);
+}
+
+[data-theme="dark"] {
+  --bg: #0C2D48;
+  --text: #ffffff;
+  --accent: #19B5A5;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+/* Responsive Global Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,93 @@
+
+.page {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.features, .testimonials, .mission {
+  padding: 2rem 0;
+}
+
+.features h2, .testimonials h2, .mission h2 {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card {
+  background: var(--light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.card h3, .card h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.card p {
+  color: var(--dark);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonials .cards .card {
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.mission p {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 1 calc(33% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
