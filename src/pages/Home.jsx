@@ -5,11 +5,12 @@ import Loader from "../components/Loader";
 import WhatsAppButton from "../components/WhatsAppButton";
 import "../styles/home.css";
 import { useEffect, useState } from "react";
-import Personalized from  "../assets/images/istockphoto-1314945563-2048x2048.jpg"
-import Ing from  "../assets/images/tomatoes-1867744_640.jpg"
-import Delivary from  "../assets/images/images.jpeg"
-import HeroImage from "../assets/images/food-and-drink-industry-7279389_1920.jpg"
-import { FaFacebook, FaInstagram, FaTwitterX } from "react-icons/fa";
+import Personalized from  "../assets/images/istockphoto-1314945563-2048x2048.jpg";
+import Ing from  "../assets/images/tomatoes-1867744_640.jpg";
+import Delivary from  "../assets/images/images.jpeg";
+import HeroImage from "../assets/images/food-and-drink-industry-7279389_1920.jpg";
+import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
+
 
 export default function Home() {
   const [showLoader, setShowLoader] = useState(true);
@@ -43,10 +44,10 @@ export default function Home() {
               guidance, and convenient weekly meal delivery.
             </p>
             <div className="icon-link">
-                <a href="#" className="social"><FaFacebook /></a>  
+              <a href="#" className="social"><FaFacebook /></a>   
                 <a href="#" className="social"><FaInstagram /></a>
-                <a href="#" className="social"><FaTwitterX /></a>
-                     
+                <a href="#" className="social"><FaXTwitter /></a>
+
             </div>
           </section>
             </div>

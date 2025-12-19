@@ -19,6 +19,14 @@
   margin-top: 1rem;
   color: var(--primary);
 }
+.icon-link .social {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+.icon-link .social:hover {
+  color: var(--secondary);
+}
 .hero-imag img {
   width: 100%;
   max-height: 400px;
