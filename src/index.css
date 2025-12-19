@@ -7,6 +7,7 @@
 
   --bg: var(--light);
   --text: var(--dark);
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
@@ -19,13 +20,14 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
 }
 
 
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
   background: var(--light);
   color: var(--dark);
   line-height: 1.6;

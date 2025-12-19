@@ -13,7 +13,7 @@ export default function Contact() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 3000); // ⏱️ seconds loader stays visible
+    }, 2000); // ⏱️ seconds loader stays visible
 
     return () => clearTimeout(timer);
   }, []);

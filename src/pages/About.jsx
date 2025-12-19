@@ -12,7 +12,7 @@ export default function About() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 3000); // ⏱️ seconds loader stays visible
+    }, 1500); // ⏱️ seconds loader stays visible
 
     return () => clearTimeout(timer);
   }, []);

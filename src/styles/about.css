@@ -6,15 +6,18 @@
 }
 
 .about-hero {
+    font-family: Georgia, "Times New Roman", Times, serif;    
   text-align: center;
   padding: 2rem 1rem;
 }
 .about-hero h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   color: var(--primary);
   margin-bottom: 1rem;
 }
 .about-hero p {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
   color: var(--dark);
   margin-bottom: 1rem;
@@ -31,9 +34,11 @@
 }
 
 .team, .mission, .vision-values, .impact {
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 2rem 0;
 }
 .team h2, .mission h2, .vision-values h2, .impact h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   color: var(--secondary);
   margin-bottom: 1.5rem;
@@ -59,10 +64,12 @@
   margin-bottom: 1rem;
 }
 .card h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
 .card p, .card ul {
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: var(--dark);
 }
 .card:hover {

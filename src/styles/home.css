@@ -33,6 +33,7 @@
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
 }
 
 .hero {

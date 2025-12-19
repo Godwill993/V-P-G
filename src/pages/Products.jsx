@@ -13,7 +13,7 @@ export default function Products() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 3000); // ⏱️ seconds loader stays visible
+    }, 1000); // ⏱️ seconds loader stays visible
 
     return () => clearTimeout(timer);
   }, []);
