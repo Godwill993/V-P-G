@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  background: var(--primary);
+  background: var(--);
   color: white;
   position: relative;
 }

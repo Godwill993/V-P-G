@@ -20,19 +20,13 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
-  line-height: 1.6;
-}
-
-
-
-body {
+   line-height: 1.6;
+  scroll-behavior: smooth;
   margin: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
-  background: var(--light);
-  color: var(--dark);
-  line-height: 1.6;
-  scroll-behavior: smooth;
+
 }
+
 
 a {
   color: var(--primary);

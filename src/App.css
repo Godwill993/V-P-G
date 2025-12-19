@@ -4,7 +4,22 @@
   padding: 0rem;
   text-align: center;
 }
+:root {
+  --primary: #19B5A5;
+  --accent: #FFB027;
+  --dark: #0C2D48;
+  --light: #ffffff;
 
+  --bg: var(--light);
+  --text: var(--dark);
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg: #0C2D48;
+  --text: #ffffff;
+  --accent: #19B5A5;
+}
 .logo {
   height: 8vh;
   padding: 1.5em;
