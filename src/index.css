@@ -8,9 +8,11 @@
   --bg: var(--light);
   --text: var(--dark);
   --shadow: rgba(0, 0, 0, 0.1);
+  --bgcard: #f9f9f9;
 }
 
 [data-theme="dark"] {
+  --bgcard: #05243c;
   --bg: #0C2D48;
   --text: #ffffff;
   --accent: #19B5A5;
@@ -44,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0 0 1rem 0;
+  color: var(--text);
 }
 
 button {

@@ -47,7 +47,7 @@
 }
 .hero p {
   font-size: 1rem;
-  color: var(--dark);
+  color: var(--text);
   margin-bottom: 0.5rem;
 }
 
