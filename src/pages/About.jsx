@@ -5,6 +5,11 @@ import ScrollReveal from "../components/ScrollReveal";
 import "../styles/about.css";
 import WhatsAppButton from "../components/WhatsAppButton";  
 import { useEffect, useState } from "react";
+import PlaceHolder from "../assets/images/cupcakes-1133146_1920.jpg"
+import PlaceHolde from "../assets/images/download.jpeg"
+import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
+import Chef from "../assets/images/download.jpeg"
+
 
 export default function About() {
           const [showLoader, setShowLoader] = useState(true);
@@ -27,7 +32,7 @@ export default function About() {
             <p>
               Visionary Path Group was founded with the mission to improve lives through healthy, tailored meals. Our goal is to make nutritious eating accessible, convenient, and delicious.
             </p>
-            <img src="https://via.placeholder.com/800x400" alt="VPG Team" />
+             {<img src={PlaceHolder} alt="Contact Us" />} 
           </section>
         </ScrollReveal>
 
@@ -36,19 +41,23 @@ export default function About() {
             <h2>Our Team</h2>
             <div className="cards">
               <div className="card">
-                <img src="https://via.placeholder.com/300x300" alt="Nutritionist" />
+                  {<img
+                src={Personalized}                alt="Personalized Meal Plans"
+                />}
                 <h3>LENZ Godwill</h3>
-                <p>Certified Nutritionist – Expert in diabetes and pregnancy diets.</p>
+                <p>Certified Nutritionist - Expert in diabetes and pregnancy diets.</p>
               </div>
               <div className="card">
-                <img src="https://via.placeholder.com/300x300" alt="Chef" />
+                {<img src={Chef} alt="Chef" />}
                 <h3>John jacob</h3>
-                <p>Head Chef – Focused on healthy, tasty meal preparation.</p>
+                <p>Head Chef - Focused on healthy, tasty meal preparation.</p>
               </div>
               <div className="card">
-                <img src="https://via.placeholder.com/300x300" alt="Wellness Expert" />
+                {<img
+                src={Personalized}                alt="Personalized Meal Plans"
+                />}
                 <h3>Mary boy</h3>
-                <p>Wellness Consultant – Ensuring meals support holistic health.</p>
+                <p>Wellness Consultant - Ensuring meals support holistic health.</p>
               </div>
             </div>
           </section>

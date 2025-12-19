@@ -6,6 +6,7 @@ import "../styles/contact.css";
 import WhatsAppButton from "../components/WhatsAppButton";  
 import Loader from "../components/Loader";
 import { useEffect, useState } from "react";
+import PlaceHolder from "../assets/images/images.jpeg"
 
 export default function Contact() {
           const [showLoader, setShowLoader] = useState(true);
@@ -28,7 +29,7 @@ export default function Contact() {
             <p>
               Have questions or want to learn more about our meal plans? Reach out to us!
             </p>
-            <img src="https://via.placeholder.com/800x400" alt="Contact Us" />
+            {<img src={PlaceHolder} alt="Contact Us" />}
           </section>
         </ScrollReveal>
 
@@ -38,15 +39,15 @@ export default function Contact() {
             <div className="cards">
               <div className="card">
                 <h3>Email</h3>
-                <p>info@vpg.com</p>
+                <p>visionarypathgroup@gmail.com</p>
               </div>
               <div className="card">
                 <h3>Phone</h3>
-                <p>+237 XXX XXX </p>
+                <p>+237 653 717 245</p>
               </div>
               <div className="card">
                 <h3>Address</h3>
-                <p>123 Healthy Street, Yaoundé, Cameroon</p>
+                <p>Etoug-ebe, Yaoundé, Cameroon</p>
               </div>
             </div>
           </section>
