@@ -7,9 +7,16 @@
 .hero-section {
   display: flex;
  padding-top: 30px;
- padding-bottom: 80px;
+ padding-bottom: 30px;
   align-items: center;
   margin-bottom: 2rem;
+
+    min-height: 80vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.458)),
+    url("../assets/images/food-and-drink-industry-7279389_1920.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .icon-link {
   margin-top: 1rem;
@@ -39,6 +46,7 @@
 .hero {
   text-align: center;
   padding: 2rem 1rem;
+  
 }
 .hero h1 {
   font-size: 2rem;

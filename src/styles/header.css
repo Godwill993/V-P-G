@@ -16,9 +16,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  background: #19b5a5;
+  background: #19b5a5c4;
   color: white;
   position: relative;
+  
+  
 }
 .logo {
   display: flex;

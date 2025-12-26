@@ -30,9 +30,7 @@ export default function Home() {
       <main className="page">
         <ScrollReveal>
             <div className="hero-section">
-                <div className="hero-imag">
-                    {<img src={HeroImage} alt="Healthy Meal" />}
-                </div>
+                
                 <section className="hero">
             <h1>Healthy Meals, Tailored for Your Life</h1>
             <p>
@@ -97,17 +95,17 @@ export default function Home() {
                   “The diabetic meal plan helped me maintain my blood sugar
                   perfectly.”
                 </p>
-                <h4>- Jane D.</h4>
+                <h4>- lenz G.</h4>
               </div>
               <div className="card">
                 <p>
                   “Pregnancy meals were delicious and nutritionally balanced.”
                 </p>
-                <h4>- Mary K.</h4>
+                <h4>- Alexis k.</h4>
               </div>
               <div className="card">
-                <p>“Vegan meals are so tasty and convenient, love it!”</p>
-                <h4>- Luke T.</h4>
+                <p>“Vpg meals are so tasty and convenient, love it!”</p>
+                <h4>- Luke amougou.</h4>
               </div>
             </div>
           </section>

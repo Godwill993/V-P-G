@@ -20,7 +20,7 @@ const Footer = () => {
         {/* BRAND / ABOUT */}
         <div className="footer-section">
           <h2 className="footer-logo">V . P . G</h2>
-          <p>
+          <p >
             Visionary Path Group is a modern restaurant offering health oriented and delicious meals, quality
             service, and an unforgettable dining experience. We blend tradition
             with innovation to serve meals you’ll always remember.
