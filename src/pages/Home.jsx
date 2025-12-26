@@ -25,7 +25,10 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+    <div className="navv">
+          <Header />
+    </div>
+     
       {showLoader && <Loader />}
       <main className="page">
         <ScrollReveal>
