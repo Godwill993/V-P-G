@@ -23,8 +23,9 @@ return (
 <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
 <Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>
 <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-</nav>
 <ThemeToggle />
+</nav>
+
 <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
 {menuOpen ? <FaTimes /> : <FaBars />}
 </div>

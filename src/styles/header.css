@@ -15,73 +15,106 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
-  background: #19b5a5c4;
-  color: white;
+  padding: 0.5rem 2rem;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
   position: sticky;
   top: 0;
   width: 100%;
-  height: 6vh;
-  z-index: 100;
-  
-  
+  height: 80px;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
+
 .logo {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 1.2rem;
+  height: 100%;
 }
+
 .logo img {
+  height: 60px;
   width: auto;
-  height: 110px;
-  object-fit: cover;
-  object-position: center center;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
-.logo span {
-  margin-left: 0.5rem;
+
+.logo img:hover {
+  transform: scale(1.05);
 }
+
 .nav {
   display: flex;
-  gap: 2rem;
-  transition: all 0.3s ease-in-out;
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .nav a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.4s;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
 }
-a:hover{
-  color: var(--secondary);
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
 }
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
 .hamburger {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--text);
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav {
     position: fixed;
-    top: 6vh;
-    right: -100%;
-    height: 100%;
-    width: 200px;
-    background: var(--primary);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3.6rem;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-  }
-  .nav.open {
+    top: 80px;
     right: 0;
+    height: calc(100vh - 80px);
+    width: 280px;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border-left: 1px solid var(--border);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
   }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
   .hamburger {
-    display: block;
+    display: flex;
+    align-items: center;
+    order: 3;
   }
 }

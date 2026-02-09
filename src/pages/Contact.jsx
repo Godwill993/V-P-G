@@ -1,72 +1,64 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/contact.css";
-import WhatsAppButton from "../components/WhatsAppButton";  
-import Loader from "../components/Loader";
-import { useEffect, useState } from "react";
 import PlaceHolder from "../assets/images/images.jpeg"
 
 export default function Contact() {
-          const [showLoader, setShowLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLoader(false);
-    }, 2000); // ⏱️ seconds loader stays visible
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
-      <Header />
-       {showLoader && <Loader />}
       <main className="page">
         <ScrollReveal>
-          <section className="contact-hero">
+          <section className="contact-hero container">
             <h1>Contact Us</h1>
             <p>
-              Have questions or want to learn more about our meal plans? Reach out to us!
+              Have questions or want to learn more about our meal plans? We're here to help you on your visionary path to better health.
             </p>
-            {<img src={PlaceHolder} alt="Contact Us" />}
+            <img src={PlaceHolder} alt="Contact Visionary Path Group" />
           </section>
         </ScrollReveal>
 
-        <ScrollReveal>
-          <section className="contact-info">
-            <h2>Our Contact Details</h2>
+        <section className="contact-info container py-section">
+          <ScrollReveal>
+            <div className="section-title">
+              <h2>Connect with Us</h2>
+            </div>
             <div className="cards">
-              <div className="card">
-                <h3>Email</h3>
+              <div className="card glass hover-lift">
+                <h3>Email Us</h3>
                 <p>visionarypathgroup@gmail.com</p>
               </div>
-              <div className="card">
-                <h3>Phone</h3>
+              <div className="card glass hover-lift">
+                <h3>Call Us</h3>
                 <p>+237 653 717 245</p>
               </div>
-              <div className="card">
-                <h3>Address</h3>
+              <div className="card glass hover-lift">
+                <h3>Visit Us</h3>
                 <p>Etoug-ebe, Yaoundé, Cameroon</p>
               </div>
             </div>
-          </section>
-        </ScrollReveal>
+          </ScrollReveal>
+        </section>
 
-        <ScrollReveal>
-          <section className="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
-          </section>
-        </ScrollReveal>
+        <section className="contact-form-section container">
+          <ScrollReveal>
+            <div className="contact-form">
+              <h2>Send Us a Message</h2>
+              <form onSubmit={(e) => e.preventDefault()}>
+                <div className="form-group">
+                  <input type="text" placeholder="Your Full Name" required />
+                </div>
+                <div className="form-group">
+                  <input type="email" placeholder="Your Email Address" required />
+                </div>
+                <div className="form-group">
+                  <textarea placeholder="How can we help you?" rows="6" required></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </ScrollReveal>
+        </section>
       </main>
-        <WhatsAppButton />
-      <Footer />
     </>
   );
 }

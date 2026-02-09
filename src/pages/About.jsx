@@ -1,110 +1,83 @@
-import Loader from "../components/Loader";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/about.css";
-import WhatsAppButton from "../components/WhatsAppButton";  
-import { useEffect, useState } from "react";
 import PlaceHolder from "../assets/images/cupcakes-1133146_1920.jpg"
-import PlaceHolde from "../assets/images/download.jpeg"
 import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
 import Chef from "../assets/images/download.jpeg"
 
-
 export default function About() {
-          const [showLoader, setShowLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLoader(false);
-    }, 1500); // ⏱️ seconds loader stays visible
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
-      <Header />
-       {showLoader && <Loader />}
-      <main className="page">
+      <main className="page container">
         <ScrollReveal>
           <section className="about-hero">
             <h1>About Visionary Path Group</h1>
             <p>
               Visionary Path Group was founded with the mission to improve lives through healthy, tailored meals. Our goal is to make nutritious eating accessible, convenient, and delicious.
             </p>
-             {<img src={PlaceHolder} alt="Contact Us" />} 
+            {<img src={PlaceHolder} alt="Healthy Food" />} 
           </section>
         </ScrollReveal>
 
-        <ScrollReveal>
-          <section className="team">
-            <h2>Our Team</h2>
+        <section className="team container py-section">
+          <ScrollReveal>
+            <div className="section-title">
+              <h2>Our Experts</h2>
+            </div>
             <div className="cards">
-              <div className="card">
-                  {<img
-                src={Personalized}                alt="Personalized Meal Plans"
-                />}
+              <div className="card hover-lift">
+                <img src={Personalized} alt="LENZ Godwill" />
                 <h3>LENZ Godwill</h3>
                 <p>Certified Nutritionist - Expert in diabetes and pregnancy diets.</p>
               </div>
-              <div className="card">
-                {<img src={Chef} alt="Chef" />}
-                <h3>John jacob</h3>
+              <div className="card hover-lift">
+                <img src={Chef} alt="John Jacob" />
+                <h3>John Jacob</h3>
                 <p>Head Chef - Focused on healthy, tasty meal preparation.</p>
               </div>
-              <div className="card">
-                {<img
-                src={Personalized}                alt="Personalized Meal Plans"
-                />}
-                <h3>Mary boy</h3>
+              <div className="card hover-lift">
+                <img src={Personalized} alt="Mary Boy" />
+                <h3>Mary Boy</h3>
                 <p>Wellness Consultant - Ensuring meals support holistic health.</p>
               </div>
             </div>
-          </section>
-        </ScrollReveal>
+          </ScrollReveal>
+        </section>
 
-        <ScrollReveal>
-          <section className="mission">
-            <h2>Our Mission</h2>
-            <p>
-              To provide health-conscious, tailored meals that promote wellness and convenience for individuals with specific dietary needs. We strive to educate, nourish, and inspire healthy lifestyles.
-            </p>
-          </section>
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <section className="vision-values">
-            <h2>Our Vision & Values</h2>
+        <section className="vision-values container py-section">
+          <ScrollReveal>
+            <div className="section-title">
+              <h2>Our Vision & Values</h2>
+            </div>
             <div className="cards">
-              <div className="card">
-                <h3>Vision</h3>
-                <p>To be the leading provider of personalized nutrition solutions for all.</p>
+              <div className="card glass">
+                <h3>Our Vision</h3>
+                <p>To be the leading provider of personalized nutrition solutions, empowering individuals to take control of their health through the power of food.</p>
               </div>
-              <div className="card">
-                <h3>Values</h3>
+              <div className="card glass">
+                <h3>Core Values</h3>
                 <ul>
-                  <li>Health First</li>
-                  <li>Quality Ingredients</li>
-                  <li>Customer Focus</li>
-                  <li>Innovation</li>
+                  <li>Health & Wellness First</li>
+                  <li>Premium Quality Ingredients</li>
+                  <li>Customer-Centric Approach</li>
+                  <li>Continuous Innovation</li>
                 </ul>
               </div>
             </div>
-          </section>
-        </ScrollReveal>
+          </ScrollReveal>
+        </section>
 
-        <ScrollReveal>
-          <section className="impact">
-            <h2>Our Impact</h2>
+        <section className="impact container py-section">
+          <ScrollReveal>
+            <div className="section-title">
+              <h2>Our Impact</h2>
+            </div>
             <p>
-              Over the years, we have served hundreds of clients, providing meals that help manage chronic conditions, support pregnancy health, and promote overall wellness. Our commitment to quality, nutrition, and customer satisfaction is unwavering.
+              Over the years, we have served hundreds of clients, providing meals that help manage chronic conditions, support pregnancy health, and promote overall wellness.
             </p>
-            <img src="https://via.placeholder.com/800x400" alt="Healthy Meals Served" />
-          </section>
-        </ScrollReveal>
+            <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?auto=format&fit=crop&q=80&w=1200" alt="Community Health Impact" />
+          </ScrollReveal>
+        </section>
       </main>
-        <WhatsAppButton />
-      <Footer />
     </>
   );
 }

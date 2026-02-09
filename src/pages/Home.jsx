@@ -1,131 +1,94 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
-import Loader from "../components/Loader";
-import WhatsAppButton from "../components/WhatsAppButton";
 import "../styles/home.css";
-import { useEffect, useState } from "react";
 import Personalized from  "../assets/images/istockphoto-1314945563-2048x2048.jpg";
 import Ing from  "../assets/images/tomatoes-1867744_640.jpg";
 import Delivary from  "../assets/images/images.jpeg";
-import HeroImage from "../assets/images/food-and-drink-industry-7279389_1920.jpg";
 import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
-
 export default function Home() {
-  const [showLoader, setShowLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLoader(false);
-    }, 3000); // ⏱️ seconds loader stays visible
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
-    <div className="navv">
-          <Header />
-    </div>
-     
-      {showLoader && <Loader />}
       <main className="page">
         <ScrollReveal>
-            <div className="hero-section">
-                
-                <section className="hero">
-            <h1>Healthy Meals, Tailored for Your Life</h1>
-            <p>
-              Visionary Path Group delivers nutritious, carefully designed meals
-              for diabetics, pregnant women, and health-conscious individuals.
-            </p>
-            <p>
-              We focus on delivering fresh ingredients, expert nutritional
-              guidance, and convenient weekly meal delivery.
-            </p>
-            <div className="icon-link">
-              <a href="#" className="social"><FaFacebook /></a>   
-                <a href="#" className="social"><FaInstagram /></a>
-                <a href="#" className="social"><FaXTwitter /></a>
-
-            </div>
-          </section>
-            </div>
-          
+          <div className="hero-section">
+            <section className="hero">
+              <h1>Healthy Meals, Tailored for Your Life</h1>
+              <p>
+                Visionary Path Group delivers nutritious, carefully designed meals 
+                for diabetics, pregnant women, and health-conscious individuals.
+              </p>
+              <div className="icon-link">
+                <a href="#" className="social" aria-label="Facebook"><FaFacebook /></a>
+                <a href="#" className="social" aria-label="Instagram"><FaInstagram /></a>
+                <a href="#" className="social" aria-label="X"><FaXTwitter /></a>
+              </div>
+            </section>
+          </div>
         </ScrollReveal>
 
-        <ScrollReveal>
-          <section className="features">
-            <h2>Why Choose Us?</h2>
+        <section className="features container py-section">
+          <ScrollReveal>
+            <div className="section-title">
+              <h2>Why Choose Us?</h2>
+              <p className="text-muted">Experience the perfect blend of health, taste, and convenience.</p>
+            </div>
             <div className="cards">
-              <div className="card">
-                {<img
-                src={Personalized}                alt="Personalized Meal Plans"
-                />}
+              <div className="card hover-lift">
+                <img src={Personalized} alt="Personalized Meal Plans" />
                 <h3>Personalized Meal Plans</h3>
-                <p>
-                  Meals designed according to your health and dietary needs.
-                </p>
+                <p>Meals designed according to your unique health requirements and dietary preferences.</p>
               </div>
-              <div className="card">
-                {<img
-                src={Ing}
-                alt="Fresh Ingredients"
-                />}
+              <div className="card hover-lift">
+                <img src={Ing} alt="Fresh Ingredients" />
                 <h3>Fresh Ingredients</h3>
-                <p>We use only the freshest locally sourced ingredients.</p>
+                <p>We source only the highest quality, fresh ingredients from local sustainable farms.</p>
               </div>
-              <div className="card">
-
-                 {<img
-                src={Delivary}
-                alt="Weekly Delivery"
-                />}
+              <div className="card hover-lift">
+                <img src={Delivary} alt="Weekly Delivery" />
                 <h3>Weekly Delivery</h3>
-                <p>Convenient delivery right to your doorstep every week.</p>
+                <p>Convenient, contact-free delivery right to your doorstep, keeping your health on track.</p>
               </div>
             </div>
-          </section>
-        </ScrollReveal>
+          </ScrollReveal>
+        </section>
 
-        <ScrollReveal>
-          <section className="testimonials">
-            <h2>Customer Testimonials</h2>
+        <section className="testimonials container py-section">
+          <ScrollReveal>
+            <div className="section-title">
+              <h2>What Our Clients Say</h2>
+            </div>
             <div className="cards">
-              <div className="card">
-                <p>
-                  “The diabetic meal plan helped me maintain my blood sugar
-                  perfectly.”
-                </p>
-                <h4>- lenz G.</h4>
+              <div className="card glass">
+                <p>“The diabetic meal plan helped me maintain my blood sugar levels perfectly without sacrificing flavor.”</p>
+                <h4>- Lenz G.</h4>
               </div>
-              <div className="card">
-                <p>
-                  “Pregnancy meals were delicious and nutritionally balanced.”
-                </p>
-                <h4>- Alexis k.</h4>
+              <div className="card glass">
+                <p>“Pregnancy meals were a lifesaver. Delicious, nutritious, and I didn't have to worry about a thing.”</p>
+                <h4>- Alexis K.</h4>
               </div>
-              <div className="card">
-                <p>“Vpg meals are so tasty and convenient, love it!”</p>
-                <h4>- Luke amougou.</h4>
+              <div className="card glass">
+                <p>“VPG meals are exceptionally tasty and so convenient. It's the best investment in my health I've made!”</p>
+                <h4>- Luke A.</h4>
               </div>
             </div>
-          </section>
-        </ScrollReveal>
+          </ScrollReveal>
+        </section>
 
-        <ScrollReveal>
-          <section className="mission">
-            <h2>Our Mission</h2>
-            <p>
-              To improve lives through healthy eating by providing tailored
-              meals and nutritional guidance for all individuals.
-            </p>
-          </section>
-        </ScrollReveal>
+        <section className="mission container py-section">
+          <ScrollReveal>
+            <div className="mission-content">
+              <div className="section-title">
+                <h2>Our Mission</h2>
+              </div>
+              <p className="lead">
+                To improve lives through healthy eating by providing tailored
+                meals and nutritional guidance for all individuals, fostering a healthier 
+                community one meal at a time.
+              </p>
+            </div>
+          </ScrollReveal>
+        </section>
       </main>
-      <WhatsAppButton />
-      <Footer />
     </>
   );
 }
