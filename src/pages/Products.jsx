@@ -77,6 +77,42 @@ export default function Products() {
                 <h3>Juices & Smoothies</h3>
                 <p>Freshly prepared beverages packed with nutrients and vitamins.</p>
               </div>
+
+              <div className="card hover-lift">
+                <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?auto=format&fit=crop&q=80&w=600" alt="Muscle Gain Packs" />
+                <h3>Muscle Gain Packs</h3>
+                <p>High-protein, calorie-rich meals designed to support muscle growth and recovery.</p>
+              </div>
+
+              <div className="card hover-lift">
+                <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80&w=600" alt="Post-Surgery Recovery" />
+                <h3>Post-Surgery Recovery</h3>
+                <p>Nutritious, easy-to-digest meals specifically curated to support the healing process.</p>
+              </div>
+
+              <div className="card hover-lift">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Organic Salad Bowls" />
+                <h3>Organic Salad Bowls</h3>
+                <p>Fresh, fiber-rich plant-based options made with locally sourced organic ingredients.</p>
+              </div>
+
+              <div className="card hover-lift">
+                <img src="https://images.unsplash.com/photo-1610397648930-477b8c7f0943?auto=format&fit=crop&q=80&w=600" alt="Detox Juice Cleanses" />
+                <h3>Detox Juice Cleanses</h3>
+                <p>Cold-pressed, nutrient-dense juices designed to refresh and revitalize your body.</p>
+              </div>
+
+              <div className="card hover-lift">
+                <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600" alt="Family Dinner Bundles" />
+                <h3>Family Dinner Bundles</h3>
+                <p>Healthy, wholesome bulk meals perfect for sharing with the entire family at home.</p>
+              </div>
+
+              <div className="card hover-lift">
+                <img src="https://images.unsplash.com/photo-1540333503348-845ad3858139?auto=format&fit=crop&q=80&w=600" alt="Office Lunch Boxes" />
+                <h3>Office Lunch Boxes</h3>
+                <p>Conveniently packed, balanced midday meals specifically for a busy workday.</p>
+              </div>
             </div>
           </ScrollReveal>
         </section>

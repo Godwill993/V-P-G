@@ -18,12 +18,25 @@ return (
 
 </div>
 <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-<Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-<Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-<Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-<Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>
-<Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-<ThemeToggle />
+  {[
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/services", label: "Services" },
+    { to: "/products", label: "Products" },
+    { to: "/contact", label: "Contact" },
+  ].map((link, index) => (
+    <Link
+      key={link.to}
+      to={link.to}
+      onClick={() => setMenuOpen(false)}
+      style={{ "--i": index }}
+    >
+      {link.label}
+    </Link>
+  ))}
+  <div className="menu-footer" style={{ "--i": 5 }}>
+    <ThemeToggle />
+  </div>
 </nav>
 
 <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

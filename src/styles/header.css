@@ -91,23 +91,23 @@
 @media (max-width: 992px) {
   .nav {
     position: fixed;
-    top: 80px;
+    top: 0;
     right: 0;
-    height: calc(100vh - 80px);
-    width: 280px;
+    height: 100vh;
+    width: 300px;
     background: var(--bg-card);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     flex-direction: column;
     align-items: flex-start;
-    padding: 3rem 2rem;
-    gap: 2rem;
+    padding: 6rem 1.5rem 2rem;
+    gap: 0.5rem;
     transform: translateX(100%);
     visibility: hidden;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s;
     border-left: 1px solid var(--border);
-    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-    overflow-x: hidden;
+    box-shadow: -15px 0 45px rgba(0,0,0,0.15);
+    z-index: 2000;
   }
 
   .nav.open {
@@ -115,9 +115,58 @@
     visibility: visible;
   }
 
+  .nav a {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.3s ease;
+    transition-delay: calc(var(--i) * 0.05s);
+  }
+
+  .nav.open a {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: calc(0.2s + var(--i) * 0.1s);
+  }
+
+  .nav a:hover {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--primary);
+    transform: translateX(5px);
+  }
+
+  .nav a::after {
+    display: none;
+  }
+
+  .menu-footer {
+    margin-top: auto;
+    width: 100%;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    transition-delay: calc(0.2s + var(--i) * 0.1s);
+  }
+
+  .nav.open .menu-footer {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .hamburger {
     display: flex;
     align-items: center;
     order: 3;
+    position: relative;
+    z-index: 2001;
   }
 }
