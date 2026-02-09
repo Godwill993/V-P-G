@@ -103,13 +103,16 @@
     padding: 3rem 2rem;
     gap: 2rem;
     transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
     border-left: 1px solid var(--border);
     box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    overflow-x: hidden;
   }
 
   .nav.open {
     transform: translateX(0);
+    visibility: visible;
   }
 
   .hamburger {

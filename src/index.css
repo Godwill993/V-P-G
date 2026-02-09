@@ -37,6 +37,12 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -44,7 +50,6 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

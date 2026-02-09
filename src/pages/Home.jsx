@@ -1,4 +1,5 @@
 import ScrollReveal from "../components/ScrollReveal";
+import AnimatedStats from "../components/AnimatedStats";
 import "../styles/home.css";
 import Personalized from  "../assets/images/istockphoto-1314945563-2048x2048.jpg";
 import Ing from  "../assets/images/tomatoes-1867744_640.jpg";
@@ -51,6 +52,8 @@ export default function Home() {
             </div>
           </ScrollReveal>
         </section>
+
+        <AnimatedStats />
 
         <section className="testimonials container py-section">
           <ScrollReveal>
