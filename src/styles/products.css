@@ -1,7 +1,7 @@
 .products-hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(to bottom, var(--slate-100), var(--bg));
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg));
   border-radius: 0 0 3rem 3rem;
   margin-bottom: 4rem;
 }

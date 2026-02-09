@@ -1,7 +1,7 @@
 .contact-hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(to bottom, var(--slate-100), var(--bg));
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg));
   border-radius: 0 0 3rem 3rem;
   margin-bottom: 4rem;
 }
@@ -58,13 +58,14 @@
 
 .contact-form {
   padding: 6rem 0;
-  background: var(--slate-100);
+  background: var(--bg-secondary);
   border-radius: 4rem;
   margin: 4rem 0;
 }
 
 [data-theme="dark"] .contact-form {
-  background: rgba(30, 41, 59, 0.5);
+  background: var(--bg-secondary);
+  opacity: 0.8;
 }
 
 .contact-form h2 {

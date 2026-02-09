@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.5)),
-    url("../assets/images/food-and-drink-industry-7279389_1920.jpg");
+    url("../assets/images/visionary_home_hero.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -147,13 +147,9 @@
 }
 
 .mission {
-  background: var(--slate-100);
+  background: var(--bg-secondary);
   border-radius: 4rem;
   margin-bottom: 6rem;
-}
-
-[data-theme="dark"] .mission {
-  background: rgba(30, 41, 59, 0.5);
 }
 
 .mission-content {

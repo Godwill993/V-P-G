@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPaperPlane } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/contact.css";
 import PlaceHolder from "../assets/images/images.jpeg"
@@ -9,6 +10,11 @@ export default function Contact() {
       <main className="page">
         <ScrollReveal>
           <section className="contact-hero container">
+            <div className="hero-icon-container">
+              <div className="hero-icon">
+                <FaPaperPlane />
+              </div>
+            </div>
             <h1>Contact Us</h1>
             <p>
               Have questions or want to learn more about our meal plans? We're here to help you on your visionary path to better health.

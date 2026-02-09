@@ -1,4 +1,5 @@
 import React from "react";
+import { FaConciergeBell } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/services.css";
 
@@ -8,6 +9,11 @@ export default function Services() {
       <main className="page container py-section">
         <ScrollReveal>
           <section className="services-hero">
+            <div className="hero-icon-container">
+              <div className="hero-icon">
+                <FaConciergeBell />
+              </div>
+            </div>
             <h1>Our Services</h1>
             <p>
               Visionary Path Group provides a wide range of services to meet your nutritional and culinary needs. We combine healthy meals with convenience and expertise.

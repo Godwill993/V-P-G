@@ -12,7 +12,7 @@ export default function ScrollReveal({ children }) {
           setShow(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();

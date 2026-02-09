@@ -1,3 +1,4 @@
+import { FaUsers } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/about.css";
 import PlaceHolder from "../assets/images/cupcakes-1133146_1920.jpg"
@@ -10,6 +11,11 @@ export default function About() {
       <main className="page container">
         <ScrollReveal>
           <section className="about-hero">
+            <div className="hero-icon-container">
+              <div className="hero-icon">
+                <FaUsers />
+              </div>
+            </div>
             <h1>About Visionary Path Group</h1>
             <p>
               Visionary Path Group was founded with the mission to improve lives through healthy, tailored meals. Our goal is to make nutritious eating accessible, convenient, and delicious.
