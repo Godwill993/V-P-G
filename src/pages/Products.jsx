@@ -18,7 +18,7 @@ export default function Products() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 14000); // 14 seconds delay
+    }, 6000); // 6 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
