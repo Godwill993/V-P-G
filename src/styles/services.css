@@ -67,15 +67,27 @@
 }
 
 .card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  color: var(--text);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .card p {
   color: var(--text-muted);
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.card-cta {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

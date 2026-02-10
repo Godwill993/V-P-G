@@ -2,6 +2,7 @@
 
 :root {
   --primary: #10b981;
+  --primary-rgb: 16, 185, 129;
   --primary-dark: #059669;
   --accent: #f59e0b;
   --dark: #0f172a;
@@ -15,8 +16,9 @@
   --bg: var(--slate-50);
   --text: var(--dark);
   --text-muted: var(--slate-500);
-  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
+  --shadow-lg: 0 20px 25px -5px var(--shadow-color), 0 10px 10px -5px var(--shadow-color);
+  --shadow-color: rgba(0, 0, 0, 0.1);
   --bg-card: rgba(255, 255, 255, 0.8);
   --bg-secondary: var(--slate-100);
   --border: var(--slate-200);
@@ -30,7 +32,12 @@
   --bg-card: rgba(30, 41, 59, 0.7);
   --bg-secondary: #1e293b;
   --border: #334155;
-  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+::selection {
+  background-color: rgba(var(--primary-rgb), 0.2);
+  color: var(--primary-dark);
 }
 
 * {
@@ -84,10 +91,17 @@ button {
 /* Glassmorphism Utility */
 .glass {
   background: var(--bg-card);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Animation Utilities */
@@ -152,11 +166,12 @@ button {
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb {
   background: var(--slate-300);
   border-radius: 10px;
+  border: 3px solid var(--bg);
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--slate-400); }
 

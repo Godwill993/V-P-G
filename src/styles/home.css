@@ -23,9 +23,28 @@
   background-position: center;
   background-attachment: fixed;
   margin-bottom: 4rem;
-  border-radius: 0 0 4rem 4rem;
+  border-radius: 0 0 5rem 5rem;
   overflow: hidden;
 }
+
+.hero-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.decor-item {
+  position: absolute;
+  color: rgba(16, 185, 129, 0.2);
+  font-size: 2.5rem;
+  filter: blur(1px);
+}
+
+.leaf-1 { top: 15%; left: 10%; animation: float 6s ease-in-out infinite; }
+.leaf-2 { top: 60%; right: 15%; animation: float 8s ease-in-out infinite reverse; font-size: 3.5rem; }
+.leaf-3 { bottom: 20%; left: 20%; animation: float 7s ease-in-out infinite 1s; font-size: 2rem; }
 
 .hero {
   max-width: 800px;
@@ -206,8 +225,21 @@
 
 .mission {
   background: var(--bg-secondary);
-  border-radius: 4rem;
+  border-radius: 5rem;
   margin-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .mission-content {

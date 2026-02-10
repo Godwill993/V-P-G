@@ -71,8 +71,9 @@
 .footer-socials a:hover {
   background: var(--primary);
   color: white;
-  transform: translateY(-5px);
+  transform: translateY(-5px) rotate(8deg);
   border-color: var(--primary);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
 }
 
 .footer-contact {

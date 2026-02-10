@@ -61,8 +61,18 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   font-size: 0.95rem;
+  border-radius: 9999px;
+  background: var(--primary);
+  color: white;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.call-btn:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
 }
 
 
@@ -106,7 +116,9 @@
 .contact-form input:focus, .contact-form textarea:focus {
   outline: none;
   border-color: var(--primary);
+  background: var(--bg);
   box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+  transform: translateY(-2px);
 }
 
 .contact-form button {

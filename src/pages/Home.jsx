@@ -6,19 +6,24 @@ import "../styles/home.css";
 import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
 import Ing from "../assets/images/tomatoes-1867744_640.jpg";
 import Delivary from "../assets/images/images.jpeg";
-import { FaFacebook, FaInstagram, FaXTwitter, FaArrowRight } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaXTwitter, FaArrowRight, FaLeaf } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <>
       <main className="page">
-        <ScrollReveal>
-          <div className="hero-section">
+        <div className="hero-section">
+          <div className="hero-decorations">
+            <div className="decor-item leaf-1"><FaLeaf /></div>
+            <div className="decor-item leaf-2"><FaLeaf /></div>
+            <div className="decor-item leaf-3"><FaLeaf /></div>
+          </div>
+          <ScrollReveal>
             <section className="hero">
-              <h1>Healthy Meals, Tailored for Your Life</h1>
+              <h1>Elevating Your Wellness Through <span className="text-gradient">Visionary Nutrition</span></h1>
               <p>
-                Visionary Path Group delivers nutritious, carefully designed meals 
-                for diabetics, pregnant women, and health-conscious individuals.
+                Premium, chef-crafted meals tailored for health-conscious living.
+                Experience the future of personalized nourishment.
               </p>
               <div className="hero-cta">
                 <Link to="/products" className="btn btn-primary btn-lg">
@@ -31,8 +36,8 @@ export default function Home() {
                 <a href="#" className="social" aria-label="X"><FaXTwitter /></a>
               </div>
             </section>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
 
         <section className="features container py-section">
           <ScrollReveal>
@@ -68,15 +73,15 @@ export default function Home() {
               <h2>What Our Clients Say</h2>
             </div>
             <div className="cards">
-              <div className="card glass">
+              <div className="card glass interactive-card">
                 <p>“The diabetic meal plan helped me maintain my blood sugar levels perfectly without sacrificing flavor.”</p>
                 <h4>- Lenz G.</h4>
               </div>
-              <div className="card glass">
+              <div className="card glass interactive-card">
                 <p>“Pregnancy meals were a lifesaver. Delicious, nutritious, and I didn't have to worry about a thing.”</p>
                 <h4>- Alexis K.</h4>
               </div>
-              <div className="card glass">
+              <div className="card glass interactive-card">
                 <p>“VPG meals are exceptionally tasty and so convenient. It's the best investment in my health I've made!”</p>
                 <h4>- Luke A.</h4>
               </div>
