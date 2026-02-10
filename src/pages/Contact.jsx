@@ -47,11 +47,6 @@ export default function Contact() {
           </ScrollReveal>
         </section>
 
-        {/* Floating Call Button for Mobile */}
-        <a href="tel:+237653717245" className="fab-call" aria-label="Call Us Now">
-          <FaPhoneVolume />
-        </a>
-
         <section className="contact-form-section container">
           <ScrollReveal>
             <div className="contact-form">
