@@ -1,5 +1,6 @@
-import React from "react";
-import { FaBoxOpen } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaBoxOpen, FaWhatsapp, FaTimes } from "react-icons/fa";
+import ProductsHero from "../assets/images/visionary_home_hero.png";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/products.css";
 import Picture1 from "../assets/images/IMG-20251219-WA0014.jpg"
@@ -12,6 +13,16 @@ import Picture7 from "../assets/images/IMG-20251219-WA0027.jpg"
 import Picture8 from "../assets/images/food-and-drink-industry-7279390_1280.jpg"
 
 export default function Products() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 14000); // 14 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <main className="page container">
@@ -26,7 +37,7 @@ export default function Products() {
             <p>
               Explore our wide range of healthy meals and nutrition packs, designed for specific dietary needs and delivered fresh to your doorstep.
             </p>
-            <img src={Picture8} alt="Healthy Products Showcase" />
+            <img src={ProductsHero} alt="Premium Healthy Product Selection" />
           </ScrollReveal>
         </section>
 
@@ -64,6 +75,33 @@ export default function Products() {
           </div>
         </section>
       </main>
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/237653717245"
+        className="fab-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp"
+      >
+        <FaWhatsapp />
+      </a>
+
+      {/* WhatsApp Pop-up Message */}
+      {showPopup && (
+        <div className="product-popup">
+          <div className="popup-content">
+            <button className="popup-close" onClick={() => setShowPopup(false)}>
+              <FaTimes />
+            </button>
+            <div className="popup-body">
+              <FaWhatsapp className="popup-icon" />
+              <p>Click the WhatsApp button below if you want any of our services.</p>
+            </div>
+            <div className="popup-arrow"></div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

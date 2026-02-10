@@ -1,8 +1,7 @@
-import React from "react";
-import { FaPaperPlane } from "react-icons/fa";
+import { FaPaperPlane, FaPhoneVolume } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/contact.css";
-import PlaceHolder from "../assets/images/images.jpeg"
+import ContactHero from "../assets/images/visionary_contact_hero.png";
 
 export default function Contact() {
   return (
@@ -19,7 +18,7 @@ export default function Contact() {
             <p>
               Have questions or want to learn more about our meal plans? We're here to help you on your visionary path to better health.
             </p>
-            <img src={PlaceHolder} alt="Contact Visionary Path Group" />
+            <img src={ContactHero} alt="Modern Healthy Office" />
           </section>
         </ScrollReveal>
 
@@ -36,6 +35,9 @@ export default function Contact() {
               <div className="card glass hover-lift">
                 <h3>Call Us</h3>
                 <p>+237 653 717 245</p>
+                <a href="tel:+237653717245" className="btn btn-primary call-btn">
+                  <FaPhoneVolume /> Call Now
+                </a>
               </div>
               <div className="card glass hover-lift">
                 <h3>Visit Us</h3>
@@ -44,6 +46,11 @@ export default function Contact() {
             </div>
           </ScrollReveal>
         </section>
+
+        {/* Floating Call Button for Mobile */}
+        <a href="tel:+237653717245" className="fab-call" aria-label="Call Us Now">
+          <FaPhoneVolume />
+        </a>
 
         <section className="contact-form-section container">
           <ScrollReveal>

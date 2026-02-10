@@ -2,6 +2,7 @@ import React from "react";
 import { FaConciergeBell } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/services.css";
+import ServicesHero from "../assets/images/visionary_services_hero.png";
 
 export default function Services() {
   return (
@@ -18,7 +19,7 @@ export default function Services() {
             <p>
               Visionary Path Group provides a wide range of services to meet your nutritional and culinary needs. We combine healthy meals with convenience and expertise.
             </p>
-            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=1200" alt="Healthy Meal Preparation" />
+            <img src={ServicesHero} alt="Professional Chef Plating" />
           </section>
         </ScrollReveal>
 

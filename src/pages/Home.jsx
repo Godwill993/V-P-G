@@ -1,10 +1,12 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import ScrollReveal from "../components/ScrollReveal";
 import AnimatedStats from "../components/AnimatedStats";
 import "../styles/home.css";
-import Personalized from  "../assets/images/istockphoto-1314945563-2048x2048.jpg";
-import Ing from  "../assets/images/tomatoes-1867744_640.jpg";
-import Delivary from  "../assets/images/images.jpeg";
-import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
+import Ing from "../assets/images/tomatoes-1867744_640.jpg";
+import Delivary from "../assets/images/images.jpeg";
+import { FaFacebook, FaInstagram, FaXTwitter, FaArrowRight } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -18,6 +20,11 @@ export default function Home() {
                 Visionary Path Group delivers nutritious, carefully designed meals 
                 for diabetics, pregnant women, and health-conscious individuals.
               </p>
+              <div className="hero-cta">
+                <Link to="/products" className="btn btn-primary btn-lg">
+                  Explore Our Products <FaArrowRight />
+                </Link>
+              </div>
               <div className="icon-link">
                 <a href="#" className="social" aria-label="Facebook"><FaFacebook /></a>
                 <a href="#" className="social" aria-label="Instagram"><FaInstagram /></a>

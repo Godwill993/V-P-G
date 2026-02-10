@@ -56,6 +56,44 @@
   margin-bottom: 1rem;
 }
 
+.call-btn {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.fab-call {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+  z-index: 1000;
+  animation: fabPulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.fab-call:active {
+  transform: scale(0.9);
+}
+
+@keyframes fabPulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
 .contact-form {
   padding: 6rem 0;
   background: var(--bg-secondary);
@@ -124,5 +162,9 @@
   .contact-form {
     border-radius: 2rem;
     padding: 4rem 0;
+  }
+
+  .fab-call {
+    display: flex;
   }
 }

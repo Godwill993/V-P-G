@@ -47,6 +47,64 @@
   margin: 0 auto 1.5rem;
 }
 
+.hero-cta {
+  margin: 2rem 0;
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  animation: btnFloat 3s ease-in-out infinite;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.btn-lg:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+}
+
+.btn-lg svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-lg:hover svg {
+  transform: translateX(5px);
+}
+
+/* Shimmer Effect */
+.btn-lg::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.btn-lg:hover::after {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+@keyframes btnFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
 .icon-link {
   display: flex;
   gap: 1.5rem;

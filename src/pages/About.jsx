@@ -1,9 +1,12 @@
+import React from "react";
 import { FaUsers } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/about.css";
-import PlaceHolder from "../assets/images/cupcakes-1133146_1920.jpg"
-import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
-import Chef from "../assets/images/download.jpeg"
+import AboutHero from "../assets/images/visionary_about_hero.png";
+import Nutritionalist from "../assets/images/visionary_nutritionalist.png";
+import ChefHeadshot from "../assets/images/visionary_chef_headshot.png";
+
+const Consultant = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600";
 
 export default function About() {
   return (
@@ -20,7 +23,7 @@ export default function About() {
             <p>
               Visionary Path Group was founded with the mission to improve lives through healthy, tailored meals. Our goal is to make nutritious eating accessible, convenient, and delicious.
             </p>
-            {<img src={PlaceHolder} alt="Healthy Food" />} 
+            <img src={AboutHero} alt="Premium Healthy Ingredients" /> 
           </section>
         </ScrollReveal>
 
@@ -31,17 +34,17 @@ export default function About() {
             </div>
             <div className="cards">
               <div className="card hover-lift">
-                <img src={Personalized} alt="LENZ Godwill" />
+                <img src={Nutritionalist} alt="LENZ Godwill" />
                 <h3>LENZ Godwill</h3>
                 <p>Certified Nutritionist - Expert in diabetes and pregnancy diets.</p>
               </div>
               <div className="card hover-lift">
-                <img src={Chef} alt="John Jacob" />
+                <img src={ChefHeadshot} alt="John Jacob" />
                 <h3>John Jacob</h3>
                 <p>Head Chef - Focused on healthy, tasty meal preparation.</p>
               </div>
               <div className="card hover-lift">
-                <img src={Personalized} alt="Mary Boy" />
+                <img src={Consultant} alt="Mary Boy" />
                 <h3>Mary Boy</h3>
                 <p>Wellness Consultant - Ensuring meals support holistic health.</p>
               </div>
@@ -80,7 +83,7 @@ export default function About() {
             <p>
               Over the years, we have served hundreds of clients, providing meals that help manage chronic conditions, support pregnancy health, and promote overall wellness.
             </p>
-            <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?auto=format&fit=crop&q=80&w=1200" alt="Community Health Impact" />
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1200" alt="Vibrant Healthy Meal Table" />
           </ScrollReveal>
         </section>
       </main>
