@@ -80,38 +80,6 @@
   }
 }
 
-/* WhatsApp FAB */
-.fab-whatsapp {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 60px;
-  height: 60px;
-  background: #25d366;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  z-index: 1000;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation: whatsappPulse 2s infinite;
-}
-
-.fab-whatsapp:hover {
-  transform: scale(1.1);
-  background: #20ba5a;
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
-}
-
-@keyframes whatsappPulse {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
-  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-
 /* Product Pop-up */
 .product-popup {
   position: fixed;

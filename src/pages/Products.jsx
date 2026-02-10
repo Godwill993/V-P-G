@@ -76,17 +76,6 @@ export default function Products() {
         </section>
       </main>
 
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/237653717245"
-        className="fab-whatsapp"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contact us on WhatsApp"
-      >
-        <FaWhatsapp />
-      </a>
-
       {/* WhatsApp Pop-up Message */}
       {showPopup && (
         <div className="product-popup">
