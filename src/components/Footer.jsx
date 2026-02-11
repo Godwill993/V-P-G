@@ -80,7 +80,7 @@ const Footer = () => {
 
           <div className="footer-contact">
             <FaClock />
-            <span>Mon - Sun: 7:00 AM - 10:00 PM</span>
+            <span>Mon - Sun: 7:00 AM - 8:00 PM</span>
           </div>
         </div>
 
