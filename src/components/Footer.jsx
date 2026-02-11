@@ -27,6 +27,7 @@ const Footer = () => {
           </p>
 
           <div className="footer-socials">
+            
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaTwitter /></a>
@@ -37,7 +38,8 @@ const Footer = () => {
         {/* QUICK LINKS */}
         <div className="footer-section">
           <h3>Quick Links</h3>
-          <ul>
+          <ul> 
+          
             <li>Home</li>
             <li>About Us</li>
             <li>Services</li>
