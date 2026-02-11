@@ -3,6 +3,7 @@ import { FaConciergeBell, FaArrowRight } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/services.css";
 import ServicesHero from "../assets/images/visionary_services_hero.png";
+import Disponible from "../assets/images/WhatsApp Image 2026-02-11 at 7.58.22 PM.jpeg";
 
 export default function Services() {
   return (
@@ -40,6 +41,12 @@ export default function Services() {
                 <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Dietary Consultation" />
                 <h3>Dietary Consultation</h3>
                 <p>Expert advice to manage health conditions and nutritional needs.</p>
+                <div className="card-cta">Learn More <FaArrowRight /></div>
+              </div>
+              <div className="card hover-lift">
+                <img src={Disponible} alt="suplements" />
+                <h3>Suplements</h3>
+                <p>sells of cellular nutritive products like collagen, spirulina, etc.</p>
                 <div className="card-cta">Learn More <FaArrowRight /></div>
               </div>
 
