@@ -61,7 +61,7 @@ export default function Products() {
               { img: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80&w=600", title: "Post-Surgery Recovery", desc: "Nutritious, easy-to-digest meals specifically curated to support the healing process." },
               { img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600", title: "Organic Salad Bowls", desc: "Fresh, fiber-rich plant-based options made with locally sourced organic ingredients." },
               { img: "https://images.unsplash.com/photo-1610397648930-477b8c7f0943?auto=format&fit=crop&q=80&w=600", title: "Detox Juice Cleanses", desc: "Cold-pressed, nutrient-dense juices designed to refresh and revitalize your body." },
-              { img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600", title: "Family Dinner Bundles", desc: "Healthy, wholesome bulk meals perfect for sharing with the entire family at home." },
+              { img: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=600", title: "Family Dinner Bundles", desc: "Healthy, wholesome bulk meals perfect for sharing with the entire family at home." },
               { img: "https://images.unsplash.com/photo-1540333503348-845ad3858139?auto=format&fit=crop&q=80&w=600", title: "Office Lunch Boxes", desc: "Conveniently packed, balanced midday meals specifically for a busy workday." },
             ].map((product, index) => (
               <ScrollReveal key={index}>

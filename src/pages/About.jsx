@@ -4,7 +4,7 @@ import ScrollReveal from "../components/ScrollReveal";
 import "../styles/about.css";
 import AboutHero from "../assets/images/visionary_about_hero.png";
 import Nutritionalist from "../assets/images/visionary_nutritionalist.png";
-import ChefHeadshot from "../assets/images/visionary_chef_headshot.png";
+const ChefHeadshot = "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&q=80&w=600";
 
 const Consultant = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600";
 

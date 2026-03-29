@@ -3,10 +3,10 @@ import { FaConciergeBell, FaArrowRight } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import ServiceModal from "../components/ServiceModal";
 import "../styles/services.css";
-import ServicesHero from "../assets/images/visionary_services_hero.png";
+const ServicesHero = "https://images.unsplash.com/photo-1577100078279-b3445dee627a?auto=format&fit=crop&q=80&w=1200";
 import Disponible from "../assets/images/WhatsApp Image 2026-02-11 at 7.58.22 PM.jpeg";
 import Picture6 from "../assets/images/IMG-20251219-WA0026.jpg";
-import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
+const Personalized = "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=600";
 
 const servicesData = [
   {
@@ -49,21 +49,21 @@ const servicesData = [
     title: "Cooking Workshops",
     description: "Learn to prepare nutritious meals with our expert chefs.",
     details: "Join our interactive workshops to master the art of healthy cooking. Our chefs teach you practical skills, time-saving tips, and flavorful recipes that you can easily replicate at home for yourself and your family.",
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=600"
+    image: "https://images.unsplash.com/photo-1622325062534-118431835694?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 7,
     title: "Meal Subscription Plans",
     description: "Flexible subscription plans to ensure consistent healthy eating.",
     details: "Experience long-term wellness with our subscription models. Choose a plan that works for you and get regular deliveries of nutritious meals, taking the guesswork out of healthy living and ensuring consistency.",
-    image: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=600"
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 8,
     title: "Nutrition Workshops",
     description: "Guidance on diet, wellness, and lifestyle improvements.",
     details: "Deepen your understanding of wellness with our educational workshops. We cover topics like label reading, stress management through food, and creating sustainable healthy habits for a better lifestyle.",
-    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=600"
+    image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: 9,

@@ -1,7 +1,7 @@
 import { FaPaperPlane, FaPhoneVolume } from "react-icons/fa";
 import ScrollReveal from "../components/ScrollReveal";
 import "../styles/contact.css";
-import ContactHero from "../assets/images/visionary_contact_hero.png";
+const ContactHero = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1200";
 
 export default function Contact() {
   return (

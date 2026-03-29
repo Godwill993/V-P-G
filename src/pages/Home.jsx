@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "../components/ScrollReveal";
 import AnimatedStats from "../components/AnimatedStats";
 import "../styles/home.css";
-import Personalized from "../assets/images/istockphoto-1314945563-2048x2048.jpg";
+const Personalized = "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=600";
 import Ing from "../assets/images/tomatoes-1867744_640.jpg";
-import Delivary from "../assets/images/images.jpeg";
+const Delivary = "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600";
 import { FaFacebook, FaInstagram, FaXTwitter, FaArrowRight, FaLeaf } from "react-icons/fa6";
 
 export default function Home() {
